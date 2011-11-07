@@ -8,6 +8,10 @@ h2. Setup
 * Hubot
 * Campfire
 
+h2. Install dependencies
+* npm install sh
+* npm install spotify
+
 h2. Current commands
 * play - Play the current song 
 * pause - Pause the current song 
