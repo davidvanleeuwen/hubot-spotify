@@ -23,4 +23,4 @@ h2. Current commands
 * search <track> - Search for a track on Spotify
 
 h2. Screenshot
-!http://cl.ly/110E271w071u421F1L2N
+!http://cl.ly/110E271w071u421F1L2N(screenshot)!
