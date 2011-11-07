@@ -1,6 +1,6 @@
 h1. Hubot-Spotify
 
-Want to control a central Spotify account in your office? This is the first version of a script that allows you to do so. Not really fancy at the moment, but it does the job. Thanks for the opensource AppleScripts.
+Want to control a central Spotify account in your office? This is the first version of a script that allows you to do so. Not really fancy at the moment, but it does the job. Thanks for the opensource AppleScripts and @dennus / @drblok.
 
 h2. Setup
 * OSX (mac mini / server)
