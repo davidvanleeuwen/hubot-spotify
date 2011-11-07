@@ -9,8 +9,8 @@ h2. Setup
 * Campfire
 
 h2. Install dependencies
-* npm install sh
-* npm install spotify
+* @npm install sh@
+* @npm install spotify@
 
 h2. Current commands
 * play - Play the current song 
@@ -21,3 +21,6 @@ h2. Current commands
 * prev|previous - Play the previous song from the playlist 
 * current song - Shows what song it's currently playing 
 * search <track> - Search for a track on Spotify
+
+h2. Screenshot
+!http://cl.ly/110E271w071u421F1L2N
