@@ -30,7 +30,7 @@ module.exports = (robot) ->
   robot.respond /volume (\d)$/i, (msg) ->
     volume = msg.match[1]
     msg.send "Setting the volume to "+volume
-    sh('osascript -e \'set volume '+volume+'"\'')
+    sh('osascript -e \'set volume '+volume+'\'')
   robot.respond /search (.*)$/i, (msg) ->
     query = msg.match[1]
     spotify.search
