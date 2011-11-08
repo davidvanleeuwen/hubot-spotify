@@ -21,6 +21,7 @@ h2. Current commands
 * prev|previous - Play the previous song from the playlist 
 * current song - Shows what song it's currently playing 
 * search <track> - Search for a track on Spotify
+* volume <0..9> - Change volume to a specific number between 0 (mute) and 9
 
 h2. Screenshot
 !http://f.cl.ly/items/3Y3K210u0h2i1P1M3S3n/12i.png(screenshot)!
