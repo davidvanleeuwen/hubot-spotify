@@ -13,15 +13,16 @@ h2. Install dependencies
 * @npm install spotify@
 
 h2. Current commands
-* play - Play the current song 
-* pause - Pause the current song 
-* toggle - Play/pause the current song 
-* stop - Stop current song 
-* next - Play the next song from the playlist 
-* prev|previous - Play the previous song from the playlist 
-* current song - Shows what song it's currently playing 
-* search <track> - Search for a track on Spotify
-* volume <0..9> - Change volume to a specific number between 0 (mute) and 9
+* play <1|2|3|query> - Play/pause, play a song that you searched (1,2,3) or play a track by title
+* pause - Pause the current song
+* toggle - Play/pause the current song
+* stop - Stop current song
+* next - Play the next song from the playlist
+* previous - Play the previous song from the playlist
+* current song - Shows what song I'm currently playing",
+* volume <0..9|up|down> - Change volume using a specific number between 0 (mute) and 9 or by up and down
+* mute - Mute/unmute the sound
+* search <track|album|artist> <query> - Search for a track on Spotify and play it
 
 h2. Screenshot
 !http://f.cl.ly/items/3Y3K210u0h2i1P1M3S3n/12i.png(screenshot)!
