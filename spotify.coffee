@@ -123,7 +123,7 @@ module.exports = (robot) ->
                   "or use Hubot play 2 for “"+data.tracks[1].name+"” by "+data.tracks[1].artists[0].name,
                   "or play 3 for “"+data.tracks[2].name+"” by "+data.tracks[2].artists[0].name
                 ]
-                msg.send msg.send result.join("\n")
+                msg.send result.join("\n")
                 options.result = {first: data.tracks[0].href, second: data.tracks[1].href, third: data.tracks[2].href}
             
             # can't play a song by album or artist at this moment... maybe in the feature
