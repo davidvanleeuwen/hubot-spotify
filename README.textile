@@ -26,3 +26,25 @@ h2. Current commands
 
 h2. Screenshot
 !http://f.cl.ly/items/3Y3K210u0h2i1P1M3S3n/12i.png(screenshot)!
+
+h2. Run Hubot with Hubot-Spotify locally?
+
+# place this in your ~/.bash_profile
+export HUBOT_CAMPFIRE_ACCOUNT=subdomain
+export HUBOT_CAMPFIRE_TOKEN=token
+export HUBOT_CAMPFIRE_ROOMS=roomnumber, roomnumber
+
+# install node, npm and clone hubot
+brew install node
+curl http://npmjs.org/install.sh | sh
+clone git://github.com/github/hubot.git
+
+# go to the hubot/scripts folder and get the hubot-spotify scripts in there
+https://github.com/davidvanleeuwen/hubot-spotify
+
+# install the dependencies for hubot-spotify
+npm install sh
+npm install spotify
+
+# run hubot with campfire
+bin/hubot -a campfire -n Hubot
