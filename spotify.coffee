@@ -40,12 +40,12 @@ module.exports = (robot) ->
     sh('osascript -e \'tell app "Spotify" to playpause\'')
   robot.respond /(next|play next|play the next song)$/i, (msg) ->
     sh('osascript -e \'tell app "Spotify" to next track\'')
-    song = sh('osascript src/hubot/scripts/current_song.scpt')
+    song = sh('osascript src/scripts/current_song.scpt')
     song.result (obj) ->
       msg.send "And now I'm playing "+ obj
   robot.respond /(previous|prev|play previous|play the previous song)$/i, (msg) ->
     sh('osascript -e \'tell app "Spotify" to previous track\'')
-    song = sh('osascript src/hubot/scripts/current_song.scpt')
+    song = sh('osascript src/scripts/current_song.scpt')
     song.result (obj) ->
       msg.send "Playing this song again: "+ obj
   robot.respond /volume ((\d{1,2})|up|down)$/i, (msg) ->
@@ -83,7 +83,7 @@ module.exports = (robot) ->
   
   # show what song I'm currently playing
   robot.respond /(current|song|track|current song|current track)$/i, (msg) ->
-    song = sh('osascript src/hubot/scripts/current_song.scpt')
+    song = sh('osascript src/scripts/current_song.scpt')
     song.result (obj) ->
       msg.send "The current song I'm playing is "+ obj
   
