@@ -1,32 +1,37 @@
-##############################
-#   Control Spotify on OSX   #
-##############################
+# Description:
+#   Play music through spotify
+#
+# Dependencies:
+#   "sh":      "~> 0.0.2"
+#   "spotify": "~> 0.2.0"
+#
+# Configuration:
+#   none
+#
+# Commands:
+#   hubot play <1|2|3|query> - Play/pause, play a song that you searched (1,2,3) or play a track by title
+#   hubot pause - Pause the current song
+#   hubot toggle - Play/pause the current song
+#   hubot stop - Stop current song
+#   hubot next - Play the next song from the playlist
+#   hubot previous - Play the previous song from the playlist
+#   hubot current song - Shows what song I'm currently playing
+#   hubot volume <0..9|up|down> - Change volume using a specific number between 0 (mute) and 9 or by up and down
+#   hubot mute - Mute/unmute the sound
+#   hubot search <track|album|artist> <query> - Search for a track on Spotify and play it
+#
+# Author:
+#   holman
+#   dickeyxxx
 
 sh = require('sh')
 spotify = require('spotify')
 
 module.exports = (robot) ->
-  # show commands
-  
   options = {}
-  options.commands = [
-    "play <1|2|3|query> - Play/pause, play a song that you searched (1,2,3) or play a track by title",
-    "pause - Pause the current song",
-    "toggle - Play/pause the current song",
-    "stop - Stop current song",
-    "next - Play the next song from the playlist",
-    "previous - Play the previous song from the playlist",
-    "current song - Shows what song I'm currently playing",
-    "volume <0..9|up|down> - Change volume using a specific number between 0 (mute) and 9 or by up and down",
-    "mute - Mute/unmute the sound",
-    "search <track|album|artist> <query> - Search for a track on Spotify and play it"
-  ]
   
   # starting volume in spotify
   options.volume = 100
-  
-  robot.respond /spotify$/i, (msg) ->
-    msg.send options.commands.join("\n")
   
   # controls
   robot.respond /toggle$/i, (msg) ->
